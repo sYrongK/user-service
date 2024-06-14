@@ -21,7 +21,11 @@ configurations {
 
 repositories {
 	maven {
-		url 'file://Users/syrongk10/projects/syrongk/repos'
+		url = uri('https://maven.pkg.github.com/sYrongK/core-repository')
+		credentials {
+			username = 'sYrongK'
+			password = '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'
+		}
 	}
 	mavenCentral()
 }
@@ -30,7 +34,7 @@ repositories {
 //	set('springCloudVersion', "2023.0.2")
 //}
 
-def coreVersion = '0.0.6-SNAPSHOT'
+def coreVersion = '0.0.8-SNAPSHOT'
 
 dependencies {
 	implementation "org.example:core:${coreVersion}"
