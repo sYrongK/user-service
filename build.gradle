@@ -64,6 +64,11 @@ dependencyManagement {//종속성 버전 관리를 중앙에서 하고 싶을 �
 		//BOM(Bill of Materials) 파일: 특정 라이브러와 그 하위 모듈에 대한 버전을 정의한 것. 다양한 모듈의 버전을 일관되게 관리해서 호환성을 보장한다.
 	}
 }
+def profiles = 'local,git,vault'
+bootRun {
+	args = ["--spring.profiles.active=" + profiles]
+}
+
 
 test {
 	useJUnitPlatform()

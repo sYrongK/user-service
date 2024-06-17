@@ -1,6 +1,6 @@
 spring:
   application:
-    name: user # cloud config client의 spring.application.name은 cloud-config 에 어느 설정파일을 찾아갈지 알려주는 역할을 한다.
+    name: default, user # cloud config client의 spring.application.name은 cloud-config 에 어느 설정파일을 찾아갈지 알려주는 역할을 한다.
     # 최종 spring.application.name은 config-server의 값으로 오버라이딩된다.
   config:
     activate: # 특정 profile에서 활성화하도록 설정

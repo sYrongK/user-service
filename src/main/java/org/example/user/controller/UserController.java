@@ -13,6 +13,9 @@ public class UserController {
     @Value("${test.property.value}")
     private String test;
 
+    @Value("${test.vault.param}")
+    private String vaultTest;
+
     @GetMapping("/home")
     public ResultResponse<Void> home() {
         return new ResultResponse<>();
