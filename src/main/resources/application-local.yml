@@ -1,6 +1,6 @@
 spring:
   application:
-    name: default, user # user -> git 저장소, default -> vault 저장소에서 찾을 설정파일 이름
+    name: default, user, eureka-client # user -> git 저장소, default -> vault 저장소에서 찾을 설정파일 이름
     # cloud config client의 spring.application.name은 cloud-config 에 어느 설정파일을 찾아갈지 알려주는 역할을 한다.
     # 최종 spring.application.name은 config-server의 값으로 오버라이딩된다.
   config:
